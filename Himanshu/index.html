@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Student Registration Form</title>
+<meta name="keywords" content="Sample registration form" />
+<meta name="description" content="sample registration form " />
+<link rel='stylesheet' href='styles/myApp.css' type='text/css' />
+
+</head>
+<body onLoad="document.registration.userid.focus();" >
+<header>
+
+<h1> Student Registration Form</h1>
+</header>
+
+<section>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li><br><br>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li><br><br>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li><br><br>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li><br><br>
+<li><label for="country">Country:</label></li><br><br>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li><br><br>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li><br><br>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li><br><br>
+<li><label id="gender">Sex:</label></li><br><br>
+<li><input type="radio" name="msex" value="Male"  /><span>Male</span></li><br><br>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li><br><br>
+<li><label>Language:</label></li><br><br>
+<li><input type="checkbox" name="en" value="English"  /><span>English</span></li><br><br>
+<li><input type="checkbox" name="nonen" value="None" /><span>Non English</span></li><br><br>
+<li><label for="description">About:</label></li>
+<li><textarea name="desc"  rows="5" cols="50"></textarea></li><br><br>
+<li><input type="submit" name="submit" value="Submit"   /></li>
+</ul>
+</form>
+
+</section>
+
+<footer>
+	  <p>Posted by: Himanshu pandey</p>
+  <p>Contact information: <a href="mailto:hphimeshpandey@gmail.com">Click</a>.</p>
+
+</footer>
+
+<script src="scripts/myScript.js"></script>
+</body>
+</html>
